@@ -70,20 +70,59 @@
     font-weight: 700;
     font-size: 3.5rem;
 }
-.fresh-style{
-    color: #E95A08;
+
+.highlight-word {
+  color: #E95A08;
 }
-.flowers-style{
-    color: #E95A08;
+/* pOur plants section */
+.plants{
+    max-width: 1140px;
+    text-align: center;
 }
-.banner-img{
-    max-width: 570px;
+.flowers-list{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1.8rem;
+    margin: 0 auto;
+    padding: 1rem;
+}
+.product{
+    padding: 15px;
+    border-radius: 4px;
+    text-align: center;
+    max-width: 270px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.product img {
+  width: 100%;
+  max-width: 270px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+.product-name {
+  font-size: 1.12rem;
+  margin: 12px 0 6px;
+}
+.price {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #111111;
+  margin-bottom: 10px;
+}
+.buy-btn {
+background-color: #E95A08;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 4px;
 }
 
 /* ✅ Responsive for mobile (max-width: 576px) */
 @media screen and (max-width: 576px) {
   .nav-menu, {
     display: flex;
+    display:none;
     justify-content: flex-end;
     width: 100%;
   }
@@ -93,6 +132,7 @@
     display: none;
   }
 
+  
   .logo-style {
     width: 60px;
   }
@@ -104,11 +144,16 @@
   .nav-link {
     font-size: 14px;
   }
+  /* banner responsive */
   .banner{
     flex-direction: column;
     .banner-img{
         order:-1;
     }
+  }
+  /* flowers-list responsive */
+  .flowers-list{
+    grid-template-columns: repeat(2,1fr);
   }
   
 
