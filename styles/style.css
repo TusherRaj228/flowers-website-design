@@ -62,10 +62,27 @@
   max-width: 1140px;
   margin: 0 auto;
 }
+.banner-description{
+    max-width: 570px;
+    margin: 0 auto;
+}
+.banner-title{
+    font-weight: 700;
+    font-size: 3.5rem;
+}
+.fresh-style{
+    color: #E95A08;
+}
+.flowers-style{
+    color: #E95A08;
+}
+.banner-img{
+    max-width: 570px;
+}
 
 /* ✅ Responsive for mobile (max-width: 576px) */
 @media screen and (max-width: 576px) {
-  .nav-menu {
+  .nav-menu, {
     display: flex;
     justify-content: flex-end;
     width: 100%;
@@ -87,4 +104,12 @@
   .nav-link {
     font-size: 14px;
   }
+  .banner{
+    flex-direction: column;
+    .banner-img{
+        order:-1;
+    }
+  }
+  
+
 }
