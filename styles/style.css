@@ -29,6 +29,9 @@
   text-decoration: none;
   font-size: 16px;
 }
+.nav-menu{
+    list-style: none;
+}
 
 /* Navbar */
 .navbar {
@@ -251,6 +254,7 @@
 .colorful-bunch {
   max-width: 1140px;
   margin-left: 60px;
+  margin-bottom: 20px;
 }
 
 .bunch {
@@ -291,6 +295,23 @@
   border-radius: 0 4px 4px 0;
   border: none;
   color: #fff;
+}
+/* footer section */
+.footer-section{
+    max-width: 1140px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.link-menu{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.link-text{
+    text-decoration: none;
+    
 }
 
 /* ✅ Responsive for mobile (max-width: 576px) */
@@ -396,5 +417,12 @@
   .newsletter-form input,
   .newsletter-form button {
     font-size: 1rem;
+  }
+  /* footer section responsive */
+  .footer-section{
+    flex-direction: column;
+  }
+  .link-menu{
+    grid-template-columns: repeat(1, 1fr);
   }
 }
